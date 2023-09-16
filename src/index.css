@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  color: #333333;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #333333;
+  margin: 0.67em 0;
+  text-align: center;
+}
+
+.table-rwd {
+  border: 1px solid rgba(181, 213, 144, 0.5);
+  border-collapse: collapse;
+  color: #666666;
+  font-size: 0.85em;
+	margin: 0 auto;
+	min-width: 900px;
+  width: 100%;
+}
+
+.table-rwd td,
+.table-rwd th {
+  border-bottom: 1px solid rgba(181, 213, 144, 0.5);
+  padding: 0.8em;
+}
+
+.table-rwd th {
+  background-color: #1a8cff;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: right;
+}
+
+
+
+.table-rwd td {
+  text-align: center;
+}
+
+
+.table-rwd td:first-of-type:before {
+  content: '';
+}
+
+.table-rwd td:first-of-type {
+  text-align: left;
+}
+
+.table-rwd td:first-of-type:after {
+  content: '';
+}
+
+.table-rwd tr:hover {
+  background-color: rgba(181, 213, 144, 0.2);
+}
+
+.table-rwd tr td:nth-child(2n) {
+  background-color: rgba(181, 213, 144, 0.2);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table-rwd td:first-child {
+  background-color: #ffffff;
+  width: 33%;
+}
+
+.table-rwd th:first-child {
+  width: 33%;
+}
+
+.table-rwd tr:hover td:first-child {
+  background-color: #1a8cff;
+  color: #ffffff;
+}
+
+.table-rwd tr:nth-child(2) td:first-child {
+  box-shadow: 0 -2.7em 0 -6px #1a8cff, -6px -2.7em 0 -6px #1a8cff;
+}
+.button{
+  border: none;
+  background-color: #ffffff00;
+  color: #fff;
 }
